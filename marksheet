@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(){
+    int m1, m2, m3, m4, m5, total, i;
+    float per;
+    {
+        printf("Enter marks of first subject: \n");
+        scanf("%d", &m1);
+        printf("Enter marks of second subject: \n");
+        scanf("%d", &m2);
+        printf("Enter marks of third subject: \n");
+        scanf("%d", &m3);
+        printf("Enter marks of fourth subject: \n");
+        scanf("%d", &m4);
+        printf("Enter marks of fifth subject: \n");
+        scanf("%d", &m5);
+        total = m1 + m2 + m3 + m4 + m5;
+        per = total / 5;
+        printf("Total marks: %d\n", total);
+        printf("Percentage: %.2f\n", per);
+    }
+    {
+        if (per>40)
+        {
+            printf("Student has passed.\n");
+        }
+        else
+        {
+            printf("Student has failed.\n");
+        }
+    }
+
+return 0;
+}

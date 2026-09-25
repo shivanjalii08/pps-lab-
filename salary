@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int i, N;
+    float basic,ta, hra, gross;
+    printf("Enter number of employees:");
+    scanf("%d", &N);
+    for (i=1;i<=N;i++){
+        printf("Enter the basic salary of employee %d:", i);
+        scanf("%f", &basic);
+        ta = basic * 0.8;
+        hra = basic * 0.15;
+        gross = basic + ta + hra;
+        printf("The basic salary of employee %d is: %.2f\n", i, basic);
+        printf("The TA of employee %d is: %.2f\n", i, ta);
+        printf("The HRA of employee %d is: %.2f\n", i, hra);
+        printf("The gross salary of employee %d is: %.2f\n", i, gross);
+    }
+    return 0;
+}
